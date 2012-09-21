@@ -54,17 +54,18 @@ public class AlienWars extends Applet implements Runnable
 		GContext = GBuffer.getGraphics();
 		TImage = createImage(350, 300);
 		GMedia = new MediaTracker(this);
-		GUFO = getImage(getCodeBase(), "UFO.gif");
+
+		GUFO = getImage(getClass().getResource("/org/seyster/alienwars/resources/ufo.gif"));
 		GMedia.addImage(GUFO, 0);
-		GUFO2 = getImage(getCodeBase(), "UFO2.gif");
+		GUFO2 = getImage(getClass().getResource("/org/seyster/alienwars/resources/ufo2.gif"));
 		GMedia.addImage(GUFO2, 1);
-		GAlien = getImage(getCodeBase(), "alien.gif");
+		GAlien = getImage(getClass().getResource("/org/seyster/alienwars/resources/alien.gif"));
 		GMedia.addImage(GAlien, 2);
-		GAlienRight = getImage(getCodeBase(), "ralien.gif");
+		GAlienRight = getImage(getClass().getResource("/org/seyster/alienwars/resources/ralien.gif"));
 		GMedia.addImage(GAlienRight, 3);
-		GBuilding = getImage(getCodeBase(), "building.gif");
+		GBuilding = getImage(getClass().getResource("/org/seyster/alienwars/resources/building.gif"));
 		GMedia.addImage(GBuilding, 4);
-		GRoof = getImage(getCodeBase(), "roof.gif");
+		GRoof = getImage(getClass().getResource("/org/seyster/alienwars/resources/roof.gif"));
 		GMedia.addImage(GRoof, 5);
 
 		GTerrain = new Terrain(TImage, this, GBuilding, GRoof);
