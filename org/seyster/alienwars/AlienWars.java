@@ -99,12 +99,11 @@ public class AlienWars extends Applet implements Runnable
 	{
 		//Load Images
 		CProc = 0;
-		GLoaded = 0;
-		for (int p = 0 ; p <= 5 ; p++)
+		while (GLoaded <= 5)
 		{
 			try
 			{
-				GMedia.waitForID(p);
+				GMedia.waitForID(GLoaded);
 			}
 			catch (InterruptedException e)
 			{
@@ -116,6 +115,7 @@ public class AlienWars extends Applet implements Runnable
 
 		//Menu
 		CProc = 1;
+		repaint();
 		while(CProc == 1)
 		{
 			try
