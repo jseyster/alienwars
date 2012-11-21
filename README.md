@@ -18,3 +18,17 @@ partner in crime for that physics web site).
 
 If you're not familiar with Gorillas, then I will ask you to kindly
 GET OFF MY LAWN.
+
+Play the game
+=============
+
+Try it out:
+
+http://jseyster.github.com/alienwars/
+
+Build
+=====
+
+The script build.sh builds the game sources and archives them in a JAR
+file.  There is also an example HTML file that shows how to embed the
+JAR file as an applet.
